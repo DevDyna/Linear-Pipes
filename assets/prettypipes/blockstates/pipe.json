@@ -1,0 +1,108 @@
+{
+    "multipart": [
+        {
+            "when": {
+                "north": "connected",
+				"south": "disconnected|legs|blocked"
+            },
+            "apply": {
+                "model": "prettypipes:block/pipe_node"
+            }
+        },
+        {
+            "when": {
+                "south": "connected",
+				"north": "disconnected|legs|blocked"
+            },
+            "apply": {
+                "model": "prettypipes:block/pipe_node",
+                "y": 180
+            }
+        },
+        {
+            "when": {
+                "east": "connected",
+				"west": "disconnected|legs|blocked"
+            },
+            "apply": {
+                "model": "prettypipes:block/pipe_node",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "west": "connected",
+				"east": "disconnected|legs|blocked"
+            },
+            "apply": {
+                "model": "prettypipes:block/pipe_node",
+                "y": 270
+            }
+        },
+        {
+            "when": {
+                "down": "connected",
+				"up": "disconnected|legs|blocked"
+            },
+            "apply": {
+                "model": "prettypipes:block/pipe_node",
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "up": "connected",
+				"down": "disconnected|legs|blocked"
+            },
+            "apply": {
+                "model": "prettypipes:block/pipe_node",
+                "x": 270
+            }
+        },
+		
+		{
+            "when": {
+                "north": "connected",
+				"south": "connected"
+            },
+            "apply": {
+                "model": "prettypipes:block/pipe_line"
+            }
+        },
+        {
+            "when": {
+                "east": "connected",
+				"west": "connected"
+            },
+            "apply": {
+                "model": "prettypipes:block/pipe_line",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "down": "connected",
+				"up": "connected"
+            },
+            "apply": {
+                "model": "prettypipes:block/pipe_line",
+                "x": 90
+            }
+        },
+        {
+            "when": {
+                "up": "disconnected|legs|blocked",
+				"down": "disconnected|legs|blocked",
+                "west": "disconnected|legs|blocked",
+				"east": "disconnected|legs|blocked",
+				"south": "disconnected|legs|blocked",
+				"north": "disconnected|legs|blocked"
+            },
+            "apply": {
+                "model": "prettypipes:block/pipe_center"
+            }
+        }
+		
+		
+    ]
+}

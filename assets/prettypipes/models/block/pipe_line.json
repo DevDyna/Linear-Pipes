@@ -1,0 +1,6 @@
+{
+  "parent": "prettypipes:block/template_pipe_line",
+  "textures": {
+    "texture": "prettypipes:block/pipe"
+  }
+}

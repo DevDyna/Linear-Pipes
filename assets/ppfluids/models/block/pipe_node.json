@@ -1,0 +1,6 @@
+{
+  "parent": "prettypipes:block/template_pipe_node",
+  "textures": {
+    "texture": "ppfluids:block/fluid_pipe"
+  }
+}
